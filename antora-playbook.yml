@@ -1,14 +1,14 @@
 site: 
   title: My Road to be a better dev
   url: https://0k1745.github.io/roadmap/
-  start_page: root::index.adoc
+  start_page: general::index.adoc
 content:
   sources:
     - url: ./
-      start_path: docs/
+      start_path: general/
       branches: HEAD
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: false
-  supplemental_files: ./docs/supplemental-ui
+  supplemental_files: ./general/supplemental-ui
