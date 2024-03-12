@@ -1,6 +1,6 @@
 site: 
   title: My Road to be a better dev
-  url: http://localhost:8080
+  url: https://0k1745.github.io/roadmap/
   start_page: root::index.adoc
 content:
   sources:
@@ -10,4 +10,5 @@ content:
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-    snapshot: true
+    snapshot: false
+  supplemental_files: ./docs/supplemental-ui
