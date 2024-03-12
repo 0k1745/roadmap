@@ -1,0 +1,13 @@
+{
+  "name": "my-road-to-be-a-better-dev",
+  "description": "My Road to be a better dev",
+  "scripts": {
+    "build:doc": "rm -rf build;npx antora antora-playbook.yml"
+  },
+  "dependencies": {
+    "antora": "^3.1.7",
+    "@antora/lunr-extension": "^1.0.0-alpha.8",
+    "asciidoctor": "^3.0.4",
+    "asciidoctor-kroki": "0.15.4"
+  }
+}

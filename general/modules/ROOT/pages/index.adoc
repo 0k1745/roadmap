@@ -1,10 +1,3 @@
-= A normal paragraph.
+= Hello World
 
- A literal paragraph.
- One or more consecutive lines indented by at least one space.
-
- The text is shown in a fixed-width (typically monospace) font.
- The lines are preformatted (i.e., as formatted in the source).
- Spaces and newlines,
- like the ones in this sentence,
- are preserved.
+//Todo explain why we do this.
