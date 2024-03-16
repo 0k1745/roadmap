@@ -1,0 +1,17 @@
+= Hello World
+
+Just a documentation website to store my path through my roadmap.
+
+* Backend
+* Software Architect
+* Full Stack
+* DevOps
+* PostgreSQL
+* Java
+* Spring Boot
+* Go
+* Rust
+* Design and Architecture
+* Design System
+* Docker
+* Kubernetes

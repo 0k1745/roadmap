@@ -1,3 +1,6 @@
+To add mermaid, you should add this dependency:
+"asciidoctor-kroki": "0.15.4"
+
 [mermaid,abcd-flowchart,svg]
 ----
 sequenceDiagram

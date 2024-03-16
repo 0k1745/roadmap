@@ -1,3 +1,0 @@
-= Hello World
-
-//Todo explain why we do this.

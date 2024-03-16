@@ -1,17 +1,20 @@
 site: 
   title: My Road to be a better dev
   url: https://0k1745.github.io/roadmap/
-  start_page: general::index.adoc
+  start_page: General::index.adoc
 content:
   sources:
     - url: ./
-      start_path: general/
+      start_path: docs/general/
+      branches: HEAD
+    - url: ./
+      start_path: docs/backend/
       branches: HEAD
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: false
-  supplemental_files: ./general/supplemental-ui
+  supplemental_files: ./docs/general/supplemental-ui
 antora:
   extensions:
     - asciidoctor-kroki

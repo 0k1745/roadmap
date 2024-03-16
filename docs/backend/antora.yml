@@ -1,4 +1,4 @@
-name: general
+name: Backend
 version: 1.0.0
 nav:
   - modules/ROOT/nav.adoc
