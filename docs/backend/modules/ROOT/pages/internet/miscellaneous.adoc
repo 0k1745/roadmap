@@ -1,0 +1,3 @@
+== Miscellaneous
+
+* IETF: Internet Engineering Task Force, provide standard for the Internet.
