@@ -117,3 +117,9 @@ nwdiag {
     }
 @enduml
 ----
+
+== Sources
+
+* https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm
+* https://cs.fyi/guide/how-does-internet-work
+* https://www.vox.com/2014/6/16/18076282/the-internet

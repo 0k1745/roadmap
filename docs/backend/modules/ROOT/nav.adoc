@@ -2,6 +2,5 @@
 ** xref:internet/http.adoc[Http]
 ** xref:internet/dns.adoc[Dns]
 ** xref:internet/browser.adoc[Browser]
-** xref:internet/domain-name.adoc[Domain-Name]
 ** xref:internet/hosting.adoc[Hosting]
 ** xref:internet/miscellaneous.adoc[Miscellaneous]
