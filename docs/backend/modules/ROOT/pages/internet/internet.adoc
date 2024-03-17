@@ -1,13 +1,119 @@
 = Internet
 
-Internet is a network of network.
-Using
+The internet is a network of networks.
+A device communicates with a router/switch through its ISP, which is interconnected with other ISP providers.
+This is the internet.
 
 
-[mermaid,abcd-flowchart,svg]
+== ISP
+
+An Internet Service Provider (ISP) is a company that provides access to the internet, managing dynamic IP addresses for your network and authorizing your access to its network.
+
+[plantuml]
 ----
-sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
+@startuml
+!include <osa/hub/hub>
+!include <osa/desktop/desktop>
+!include <osa/database/database>
+!include <office/Servers/application_server>
+
+nwdiag {
+ network internalNetwork {
+      address = "10.x.x.x/24"
+      personal_computer_0 [address = "210.x.x.1, 210.x.x.20",  description = "<$desktop>\n personal_computer"]
+      personal_computer_1 [address = "210.x.x.2",  description = "<$desktop>\n personal_computer"]
+      router_private_network_1  [address = "10.x.x.254",  description = "<$hub>\n router private network"]];
+
+  }
+
+   network internalNetwork_2 {
+      address = "10.x.x.x/24"
+      personal_computer_2 [address = "10.x.x.1, 210.x.x.20",  description = "<$desktop>\n personal_computer"]
+      database [address = "10.x.x.2",  description = "<$database>\n web04"]
+      router_private_network_2  [address = "10.x.x.254",  description = "<$hub>\n router private network"]];
+  }
+    network telephonyServiceProvider{
+      router_private_network_1;
+      router_private_network_2;
+      isp_backbone [address = "10.x.x.2",  description = "<$application_server>\n ISP backbone"]
+
+    }
+}
+@enduml
+----
+
+== NSP
+Network Service Providers provide extensive network infrastructure to interconnect Internet Service Providers (ISPs) and other networks.
+Each NSP are link to (at least) 3 Network Access Points.
+[plantuml]
+----
+@startuml
+!include <osa/hub/hub>
+!include <osa/desktop/desktop>
+!include <osa/database/database>
+!include <office/Servers/application_server>
+scale .8
+nwdiag {
+
+
+    network telephonyServiceProvider{
+      router_external_ISP_1[address = "x.x.x.x",  description = "<$hub>\n router local ISP"]]
+
+    }
+
+    network telephonyServiceProvider_1{
+      router_external_ISP_2[address = "x.x.x.x",  description = "<$hub>\n router local ISP"]]
+    }
+
+    network regional_ISP{
+        router_external_ISP_1
+        router_external_ISP_2
+        router_regional_ISP[address = "x.x.x.x",  description = "<$hub>\n router regional ISP"]]
+    }
+
+    network regional_ISP_1{
+        router_regional_ISP_1[address = "x.x.x.x",  description = "<$hub>\n router regional ISP"]]
+    }
+
+    network regional_ISP_1{
+        router_regional_ISP_1[address = "x.x.x.x",  description = "<$hub>\n router regional ISP"]]
+    }
+
+    network NSP{
+        router_regional_ISP
+        router_regional_ISP_1
+        NSP [address = "x.x.x.x",  description = "<$hub>\n NSP"]]
+    }
+}
+@enduml
+----
+== NAP
+
+Network Access Points serve as vital junctions in the network hierarchy, facilitating interconnection between Internet Service Providers and enabling efficient data routing.
+[plantuml]
+----
+@startuml
+!include <osa/hub/hub>
+!include <osa/desktop/desktop>
+!include <osa/database/database>
+!include <office/Servers/application_server>
+
+nwdiag {
+
+
+    network NSP{
+        router_regional_ISP_0 [address = "x.x.x.x",  description = "<$hub>\n ISP"]]
+        router_regional_ISP_1 [address = "x.x.x.x",  description = "<$hub>\n ISP"]]
+        NSP [address = "x.x.x.x",  description = "<$hub>\n NSP"]]
+    }
+
+    network NSP_2{
+        NSP_2 [address = "x.x.x.x",  description = "<$hub>\n NSP"]]
+    }
+
+    network NAP{
+        NSP
+        NSP_2;
+    }
+@enduml
 ----
