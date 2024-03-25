@@ -2,16 +2,25 @@
 import React, {useState, useEffect} from 'react';
 import {useParams} from "next/navigation";
 import {Card} from "antd";
+import {string} from "prop-types";
+
+interface ProcessDTO {
+     Name: string
+     State: string
+     Memory:{
+        Max: number
+        Current: number
+    }
+}
 
 const Process = () => {
-    const [data, setData] = useState(null);
+    const [data , setData] = useState<ProcessDTO>();
     const {id} = useParams(); // Example ID state
 
     useEffect(() => {
-        const fetchData = async (id) => {
+        const fetchData = async (id: string | string[]) => {
             try {
                 const response = await fetch(`http://localhost:8080/process/${id}`);
-                console.log(id);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
