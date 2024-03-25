@@ -5,7 +5,6 @@ import {Table} from "antd";
 const ProcessesList = ({children}: { children: any }) => {
     return (
         <div>
-            {console.log(JSON.stringify(children))}
             <Table dataSource={children.resources} columns={[
                 {
                     title: 'location',

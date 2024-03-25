@@ -1,0 +1,28 @@
+version: "3.8"
+name: roadmap
+
+services:
+
+  process:
+    image: process
+    build: ./app/processus
+    ports:
+      - "8080:8080"
+    expose:
+      - 8080
+    networks:
+      - homeNetwork
+  home:
+    image: gui
+    build: ./app/home
+    ports:
+      - "3000:3000"
+    expose:
+      - 3000
+    depends_on:
+      - process
+    networks:
+      - homeNetwork
+
+networks:
+  homeNetwork:

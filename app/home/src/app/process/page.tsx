@@ -29,7 +29,7 @@ const Processes = () => {
                 Hello world!
             </h1>
             {data ? (
-                <ProcessesList children={data}></ProcessesList>
+                <ProcessesList>{data}</ProcessesList>
             ) : (
                 <h1 className="text-3xl font-bold underline">
                     Loading...
