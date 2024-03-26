@@ -3,28 +3,23 @@
 
 import {Input} from "antd";
 import {useState} from "react";
-import {sha3_512} from 'js-sha3';
 import {CheckOutlined, CloseOutlined} from "@ant-design/icons";
+import * as bcrypt from 'bcryptjs';
 
 const Baby = () => {
     const [result, setResult] = useState({state: false});
 
     function testValue(name: string) {
-        // Step 1: Bcrypt hashing
         console.log("FIRE");
-        // const saltRounds: number = 16; // You can adjust the number of salt rounds as per your requirement
-        // const hashedBcrypt: string = bcrypt.hashSync(name, saltRounds);
-
-        const hashedSha3: string = sha3_512(name?.toUpperCase()); // Using SHA3-256 here, you can choose other variants if needed
-        const encodedBabyName = "e93e5cf6c3ae48ce285a520e62d9a4f66090926e1e0496e5a37801b07a398969c81863e31c99064e5e71b12ffcbdf7e872a74ccac9d00de71d303529c759178b";
-        console.log(`test: ${hashedSha3 === encodedBabyName}`);
-
-        if (name.toUpperCase() === 'LARDON' || name.toUpperCase() === 'TOTO'||encodedBabyName === hashedSha3) {
-            setResult({state: true})
-        } else {
-            setResult({state: false})
-        }
-
+        return bcrypt.compare(name.toUpperCase(), "$2a$16$0Dq28k/c6XkmGC7Pe9frROvFER1qmMS1WQq4dTy2i.RYYYJYFU6rC", function (err: any, result: boolean) {
+            if (name.toUpperCase() === 'LARDON' || name.toUpperCase() === 'TOTO' || result) {
+                console.log("success")
+                return setResult({state: true})
+            } else {
+                console.log("ko")
+                return setResult({state: false})
+            }
+        });
     }
 
     function getElement() {
@@ -37,7 +32,7 @@ const Baby = () => {
     return <>
 
         <Input placeholder="Type the future name of the baby here"
-               onChange={(e) => testValue(e.target.value)}
+               onPressEnter={(e) => testValue(e.target.value)}
         />
         {getElement()}
     </>
