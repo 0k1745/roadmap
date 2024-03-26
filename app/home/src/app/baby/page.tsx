@@ -15,11 +15,11 @@ const Baby = () => {
         // const saltRounds: number = 16; // You can adjust the number of salt rounds as per your requirement
         // const hashedBcrypt: string = bcrypt.hashSync(name, saltRounds);
 
-        const hashedSha3: string = sha3_512(name); // Using SHA3-256 here, you can choose other variants if needed
+        const hashedSha3: string = sha3_512(name?.toUpperCase()); // Using SHA3-256 here, you can choose other variants if needed
         const encodedBabyName = "e93e5cf6c3ae48ce285a520e62d9a4f66090926e1e0496e5a37801b07a398969c81863e31c99064e5e71b12ffcbdf7e872a74ccac9d00de71d303529c759178b";
         console.log(`test: ${hashedSha3 === encodedBabyName}`);
 
-        if (name === 'LARDON' || name === 'TOTO'||encodedBabyName === hashedSha3) {
+        if (name.toUpperCase() === 'LARDON' || name.toUpperCase() === 'TOTO'||encodedBabyName === hashedSha3) {
             setResult({state: true})
         } else {
             setResult({state: false})
