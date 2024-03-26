@@ -32,7 +32,7 @@ const Baby = () => {
     return <>
 
         <Input placeholder="Type the future name of the baby here"
-               onPressEnter={(e) => testValue(e.target.value)}
+               onPressEnter={(e) => testValue((e.target as HTMLTextAreaElement).value)}
         />
         {getElement()}
     </>
