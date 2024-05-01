@@ -16,11 +16,11 @@ concurrency:
 
 jobs:
   build-gui:
-    uses: ./.github/actions/deploy-docker
+    uses: ./.github/actions/deploy-docker@main
     with:
       contextPath: app/processus
   build-process:
-    uses: ./.github/actions/deploy-docker
+    uses: ./.github/actions/deploy-docker@main
     with:
       contextPath: app/home
 
