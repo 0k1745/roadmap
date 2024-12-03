@@ -1,0 +1,35 @@
+= install on wsl
+
+== Install Git
+=== Create a private key
+=== Add it to github
+=== Install machete
+
+== OhMyZsh
+=== install Zsh
+=== install OhMyZsh
+=== install powerlevel10k/powerlevel10k
+
+== Language
+=== java
+==== Install sdkman
+==== Install java
+==== Install maven
+=== go
+==== Install go
+==== Install gvm
+=== node
+==== Install nvm
+==== Install node 
+=== python
+==== Install pyenv
+=== docker
+==== Install docker
+=== k8s
+==== Install kubectl
+==== Install k9s
+==== Install krew
+=== gke
+==== Install gcloud auth
+=== shell
+==== Install jq

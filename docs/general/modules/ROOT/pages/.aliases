@@ -1,0 +1,5 @@
+alias k9s="/home/saunier/.local/bin/k9s"
+alias auth="gcloud auth login"
+alias main="git switch main;git pull"
+alias up="git machete go up"
+alias down="git machete go down"
