@@ -2,67 +2,814 @@
 
 An array is a one-dimensional table.
 
-In Java, an array can be defined as follows:
+[excalidraw,svg]
+----
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "tUpnn7a64YLCuJqwr3Wfm",
+      "type": "rectangle",
+      "x": 608.7999877929688,
+      "y": 254.60000610351562,
+      "width": 754.4000854492188,
+      "height": 112,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a2",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1334311038,
+      "version": 101,
+      "versionNonce": 673436414,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "v3uZSiwMBcOCTDnxZ2f1W",
+      "type": "line",
+      "x": 713.2000122070312,
+      "y": 255.12183133272458,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a3",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 784569726,
+      "version": 94,
+      "versionNonce": 989160418,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "WRYHlK4C5iBwZVIpI3Bdt",
+      "type": "line",
+      "x": 793.1400637063082,
+      "y": 256.3538260125276,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a4",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1172965630,
+      "version": 141,
+      "versionNonce": 611107646,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "1MkM29Hv9lYIBVdv0_f0H",
+      "type": "line",
+      "x": 954.0770123139207,
+      "y": 255.94594023010694,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a5",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1098208930,
+      "version": 176,
+      "versionNonce": 941791138,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "c70tHtYiDpYwaonpSkjU8",
+      "type": "line",
+      "x": 873.6878477031934,
+      "y": 256.47563935748303,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a6",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1211347070,
+      "version": 143,
+      "versionNonce": 1118677886,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "dL33-7FQoASjn8Ey55N1f",
+      "type": "line",
+      "x": 1035.104046886514,
+      "y": 255.5457540728804,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a7",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 364983970,
+      "version": 188,
+      "versionNonce": 1223906146,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "228BtTkJYCJLIr2l8Bp6d",
+      "type": "line",
+      "x": 1114.9347478355116,
+      "y": 254.90939655927946,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a8",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 709542782,
+      "version": 139,
+      "versionNonce": 1898417086,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "fr9G2FE38sfH1EsLT13xr",
+      "type": "line",
+      "x": 1196.5773450390018,
+      "y": 256.9508951768466,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a9",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1953682594,
+      "version": 154,
+      "versionNonce": 1068930850,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "hGNQ26-RL9bacdEAqkd53",
+      "type": "line",
+      "x": 1277.6377559648813,
+      "y": 255.72478227527813,
+      "width": 0,
+      "height": 110.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aA",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 2125345250,
+      "version": 139,
+      "versionNonce": 771449854,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320195198,
+      "link": null,
+      "locked": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "id": "oU1PTda594t4dk_dHWRNg",
+      "type": "text",
+      "x": 648.7999267578125,
+      "y": 284.79998779296875,
+      "width": 23.90399169921875,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aC",
+      "roundness": null,
+      "seed": 1647469758,
+      "version": 143,
+      "versionNonce": 665076606,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "0",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "0",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "yNIJ_us2-esK4ZHd_oywn",
+      "type": "text",
+      "x": 733.6539268493652,
+      "y": 284,
+      "width": 15.371994018554688,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aD",
+      "roundness": null,
+      "seed": 2143501474,
+      "version": 185,
+      "versionNonce": 1179794274,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "1",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "1",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "1C1Uoh44uycj5t7DffKxZ",
+      "type": "text",
+      "x": 809.9759292602539,
+      "y": 284,
+      "width": 25.199996948242188,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aE",
+      "roundness": null,
+      "seed": 1015630434,
+      "version": 64,
+      "versionNonce": 730538942,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "2",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "2",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "t8hBnQ7bDs3F6T-5KJP1Y",
+      "type": "text",
+      "x": 896.1259346008301,
+      "y": 284,
+      "width": 21.88800048828125,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aF",
+      "roundness": null,
+      "seed": 929117630,
+      "version": 64,
+      "versionNonce": 16285474,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "3",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "3",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "9aLWpv29OvNBjAn79OrZG",
+      "type": "text",
+      "x": 978.9639434814453,
+      "y": 284,
+      "width": 21.05999755859375,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aH",
+      "roundness": null,
+      "seed": 1678345278,
+      "version": 66,
+      "versionNonce": 137100286,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "4",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "4",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "8wkmrMurhRGg5hwS5230m",
+      "type": "text",
+      "x": 1060.973949432373,
+      "y": 284,
+      "width": 22.24798583984375,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aI",
+      "roundness": null,
+      "seed": 1931025790,
+      "version": 64,
+      "versionNonce": 1570786018,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "5",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "5",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "CtzL2j0FOSMzBeZ7cTxhr",
+      "type": "text",
+      "x": 1144.1719436645508,
+      "y": 284,
+      "width": 23.039993286132812,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aJ",
+      "roundness": null,
+      "seed": 12021374,
+      "version": 64,
+      "versionNonce": 59231294,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "6",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "6",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "m0uYT8burp1q4E450azzb",
+      "type": "text",
+      "x": 1228.1619453430176,
+      "y": 284,
+      "width": 20.087997436523438,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aK",
+      "roundness": null,
+      "seed": 2015707006,
+      "version": 64,
+      "versionNonce": 853057186,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "7",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "7",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "TgsqUNiKVUiw1oq8i9pxU",
+      "type": "text",
+      "x": 1309.199951171875,
+      "y": 278.4000244140625,
+      "width": 22.89599609375,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aL",
+      "roundness": null,
+      "seed": 899846270,
+      "version": 113,
+      "versionNonce": 2071958654,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1740320310476,
+      "link": null,
+      "locked": true,
+      "text": "8",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "8",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
+----
 
 == Java
+In Java, an array can be defined as follows:
 
 === Initialization
 
 [source,java]
-
+----
 int[] array = new int[10];
+----
 
 This will initialize the array with zeros.
 
 Alternatively:
 
 [source,java]
-
+----
 int[] array = new int[]{1, 2, 3, 4, 5, 6, 7};
+----
 
 The size is fixed at creation.
 
 Attempting to access an invalid index:
 
 [source,java]
-
+----
 int[] array = new int[]{1, 2, 3, 4, 5, 6, 7};
 array[7] = 2;
+----
 
 will throw:
 
 [source]
-
+----
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+----
 
 === Iterating Over an Array
 
 You can iterate over an array using a for-loop:
 
 [source,java]
-
+----
 for (int i = 0; i < array.length; i++) {
 System.out.println("Index: " + i + ", Value: " + array[i]);
 }
+----
 
 Or using an enhanced for-loop (without index):
 
 [source,java]
-
+----
 for (int element : array) {
 System.out.println(element);
 }
 
+----
 Or using Java 8 streams to access both index and value:
 
 [source,java]
-
+----
 import java.util.stream.IntStream;
 
 int[] array = {1, 2, 3, 4, 5};
 
 IntStream.range(0, array.length)
 .forEach(i -> System.out.println("Index: " + i + ", Value: " + array[i]));
+----
 
 === Java Storage
 
@@ -77,74 +824,81 @@ Java arrays have a fixed size and do not come with built-in methods like collect
 ==== 1. Sorting an Array
 
 [source,java]
-
+----
 import java.util.Arrays;
 
 int[] array = {5, 3, 8, 1, 2};
 Arrays.sort(array);
 
 System.out.println(Arrays.toString(array)); // Outputs: [1, 2, 3, 5, 8]
+----
 
 ==== 2. Searching in an Array (Binary Search)
 
 The array must be sorted before using binarySearch.
 
 [source,java]
-
+----
 int[] array = {1, 2, 3, 5, 8};
 int index = Arrays.binarySearch(array, 5);
 
 System.out.println("Index of 5: " + index); // Outputs: Index of 5: 3
+----
 
 ==== 3. Copying an Array
 
 [source,java]
-
+----
 int[] original = {1, 2, 3};
 int[] copy = Arrays.copyOf(original, original.length);
 
 System.out.println(Arrays.toString(copy)); // Outputs: [1, 2, 3]
+----
 
 ==== 4. Filling an Array
 
 [source,java]
-
+----
 int[] array = new int[5];
 Arrays.fill(array, 7);
 
 System.out.println(Arrays.toString(array)); // Outputs: [7, 7, 7, 7, 7]
+----
 
 ==== 5. Comparing Arrays
 
 Arrays.equals checks if two arrays are equal (element-wise).
 
 [source,java]
-
+----
 int[] array1 = {1, 2, 3};
 int[] array2 = {1, 2, 3};
 boolean isEqual = Arrays.equals(array1, array2);
 
 System.out.println("Arrays are equal: " + isEqual); // Outputs: Arrays are equal: true
+----
 
 ==== 6. Converting an Array to String
 
 [source,java]
-
+----
 int[] array = {1, 2, 3, 4};
 String arrayString = Arrays.toString(array);
 
 System.out.println(arrayString); // Outputs: [1, 2, 3, 4]
+----
 
 ==== 7. Converting an Array to a List
 
 For object arrays (e.g., String[]), use Arrays.asList:
 
 [source,java]
-
+----
 String[] fruits = {"Apple", "Banana", "Orange"};
 List fruitList = Arrays.asList(fruits);
 
 System.out.println(fruitList); // Outputs: [Apple, Banana, Orange]
+----
 
 Note: The resulting list is backed by the original array and has a fixed size.
 
