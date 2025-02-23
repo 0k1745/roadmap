@@ -1,1 +1,49 @@
-== Big O notation
+= Big O Notation
+
+Big O Notation is a formalism used to describe the time and space complexity of an algorithm.
+
+It is defined based on the input size of the algorithm.
+
+The notation is as follows:
+
+* *O(1):* The algorithm will always take the same amount of time or space, regardless of the input size.
+* *O(log n):* The algorithm's duration increases logarithmically as the input size grows, resulting in slower growth over time.
+* *O(n):* The algorithm's duration will grow proportionally to the size of the input.
+* *O(n²):* The algorithm's duration will grow proportionally to the square of the input size.
+* *O(2ⁿ):* The algorithm's duration will grow exponentially with the size of the input.
+* *O(n!):* The algorithm's duration will grow factorially with the size of the input, leading to extremely rapid growth.
+
+== Algorithms and Their Big O Complexities
+
+[cols="2,1", options="header"]
+|===
+| Algorithm | Time Complexity
+
+| *Sorting Algorithms* |
+| QuickSort | O(n log n) average, O(n²) worst
+| MergeSort | O(n log n)
+| InsertionSort | O(n²)
+| BubbleSort | O(n²)
+
+| *Greedy Algorithms* |
+| Dijkstra's Algorithm | O((V + E) log V) with a min-heap
+| A* Search | O(E) (depends on heuristic)
+
+| *Divide and Conquer* |
+| QuickSort | O(n log n) average, O(n²) worst
+| MergeSort | O(n log n)
+
+| *Dynamic Programming* |
+| Knapsack (0/1) | O(nW) (n = items, W = capacity)
+| Longest Common Subsequence | O(mn) (m and n = string lengths)
+
+| *Graph Algorithms* |
+| DFS | O(V + E)
+| BFS | O(V + E)
+| Dijkstra's Algorithm | O((V + E) log V)
+| A* Search | O(E) (depends on heuristic)
+
+| *Algorithmic Techniques* |
+| Sliding Window | O(n)
+| Two Pointers | O(n)
+|===
