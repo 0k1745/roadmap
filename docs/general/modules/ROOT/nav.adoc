@@ -1,2 +1,3 @@
 * xref:build-documentation.adoc[Build Documentation]
 * xref:mermaid.adoc[Mermaid]
+* xref:excalidraw.adoc[Excalidraw]
